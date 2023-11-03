@@ -13,9 +13,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/",(req,res) =>{
-   return res.send("You are requested to read Readme file and accordingly use PostMan for this Project");
-})
+// app.use("/",(req,res) =>{
+//    return res.send("You are requested to read Readme file and accordingly use PostMan for this Project");
+// })
 app.use("/doctors", require("./routes/doctor"));
 app.use("/patients", require("./routes/patient"));
 app.use("/reports", require("./routes/report"));
